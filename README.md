@@ -1,70 +1,89 @@
-# 🎵 Music Library Manager (OOP Edition)
+# 🎵 Media-Enhanced Python Music Library
 
-A Python program to manage your personal music library.  
-Add, view, search, and clear songs using a simple text interface — now with **Object-Oriented Programming (OOP)** and **file saving**!
-
----
-
-## 📌 Features
-
-- ✅ Add songs (title + artist)
-- ✅ View all saved songs
-- ✅ Search songs by artist
-- ✅ Clear your entire library
-- ✅ Save and load songs from a `.txt` file
-- ✅ Input validation and user-friendly prompts
+A terminal-based music library manager built in Python. This upgraded version supports MP3 playback using `pygame`, file saving/loading, and a menu-driven user experience.
 
 ---
 
-## 🧠 Concepts Used
+## ✨ Features
 
-- Classes and objects (OOP)
-- File I/O with `open()`
-- Dunder methods: `__init__`, `__str__`
-- Custom class methods
-- Loops and conditionals
-- Input handling and validation
-- `os` module for file checking
-
----
-
-## 🚀 How to Run
-
-1. Make sure you have **Python installed**.
-2. Download or clone the repository.
-3. Run the script in your terminal or code editor:
-   ```bash
-   python music_library_oop.py
+- ✅ Add new songs with title, artist, and audio filename  
+- 🎧 Play audio files (MP3 support via `pygame`)  
+- 🔍 Search songs by artist (case-insensitive)  
+- 💾 Save and load your music library from a file  
+- 🧹 Clear the entire saved music list with confirmation  
+- 📃 Display all saved songs with numbering  
+- 🧭 Menu-based navigation system  
 
 ---
 
-## Use the menu to:
+## 📁 File Format
 
-Add songs
+Songs are stored in `music_library.txt` with this structure:
 
-View your music library
+Title,Artist,Filename
 
-Search by artist
+makefile
+Kopieren
+Bearbeiten
 
-Clear your saved songs
+**Example:**
+Stronger,Kanye West,stronger.mp3
+Bohemian Rhapsody,Queen,bohemian.mp3
 
-## 📂 Files
-music_library_oop.py → The main Python script
+> ⚠️ Make sure the audio files are in the same folder as the Python script.
 
-music_library.txt → Automatically created and updated with saved songs
+---
 
-## 🌱 Future Ideas
-🎧 Create playlists
+## 🔧 Requirements
 
-🎵 Add song length, genre, and release year
+- Python 3.8 or higher  
+- `pygame` library (for audio playback)
 
-💾 Export/import as JSON or CSV
+### Install `pygame`:
 
-🖥️ Build a GUI version
+```bash
+pip install pygame
+```
+## ▶️ How to Use
+Run the script:
+python music_library.py
+Then follow the menu prompts:
 
-🌐 Build a web app version
+🎵 Music Library
+1. Add songs
+2. Show saved songs
+3. Clear library
+4. Search songs by artist
+5. Play a song
+6. Quit
+## 📌 Example Flow
+Add a song:
+Provide title, artist, and MP3 filename (e.g. track1.mp3)
 
-🔊 Integrate APIs (Spotify, YouTube, etc.)
+View saved songs:
+Displays a numbered list of all songs in your library
 
-## 🙋‍♂️ Author
-Built by Taylan Tekin — a 15-year-old Python beginner exploring object-oriented programming and real-world app ideas
+Play a song:
+Choose the number to start playback, press Enter to stop
+
+Search by artist:
+Case-insensitive search that lists all matches
+
+## 🧠 Future Improvements
+🎵 Playlist support (create, edit, delete)
+
+🖥️ GUI with Tkinter or PyQt
+
+📱 Web or mobile app version
+
+📤 Upload/import songs from folders
+
+⏯️ Add playback controls (pause, resume, skip)
+
+## 📜 License
+This project is licensed under the MIT License.
+Feel free to use, modify, and share.
+
+## 👤 Author
+Taylan Tekin
+15 y/o Python learner — documenting progress one project at a time and exploring object-oriented programming and real-world app ideas
